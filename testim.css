@@ -36,4 +36,53 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: none;
+}
+
+.user-text .fas{
+    font-size: 30px;
+    margin-bottom: 13px;
+    margin-top: 20px;
+}
+
+.user-text span{
+    display: block;
+    font-size: 13px;
+    margin-top: 70px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.testimonial-pic{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-pic{
+    width: 65px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.user-text.active-text{
+    display: block;
+    animation: move 0.5s linear forwards;
+}
+
+.user-pic.active-pic{
+    width: 100px;
+    border: 3px solid #ff0058;
+}
+
+@keyframes moveup{
+    0%{
+        margin-top: 25px;
+    }
+    100%{
+        margin-top: 0px;
+    }
 }
